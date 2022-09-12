@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+/*header*/
 header{
   background-color: blue;
   height: 80px; /*da togliere*/
@@ -22,6 +23,9 @@ header .container span{
   margin: 20px 0;
 }
 
+/*main*/
+
+/*jumbotron*/
 main .jumbotron {
   background-color: aqua;
   height: 350px; /*da togliere*/
@@ -30,22 +34,44 @@ main .jumbotron {
   align-items: center;
 }
 
-main .jumbotron section{
-  width: 70%;
+main .jumbotron .intro{
+  width: 50%;
   margin: 0 auto;
   padding: 10px;
   background-color: cornflowerblue;
   height: 200px; /*da togliere*/
+  text-align: center;
 }
 
+/*sezione con informazioni e immagini*/
+
+/*blocchi con immagine e testo*/
 main .info {
   width: 70%;
   height: 250px; /*da togliere*/
   background-color: greenyellow;
   margin: 0 auto;
   margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
+main .info .immagine{
+  width: 52%;
+  height: 200px; /*da togliere*/
+  background-color: gold;
+  margin-left: 10px;
+}
+
+main .info .testo{
+  width: 42%;
+  height: 200px; /*da togliere*/
+  background-color: lightgoldenrodyellow;
+  margin-right: 10px;
+}
+
+/*blocco con sfondo, testo e immagine*/
 main .colored {
   height: 500px; /*da togliere*/
   background-color: lightcyan;
@@ -54,6 +80,16 @@ main .colored {
   justify-content: center;
   align-items: center;
 }
+
+main .colored .immagine-reverse{
+  margin-right: 10px;
+}
+
+main .colored .testo-reverse{
+  margin-left: 10px;
+}
+
+/*sezione con un unico blocco*/
 
 main .colored-2 {
   height: 500px; /*da togliere*/
@@ -65,14 +101,30 @@ main .colored-2 {
   flex-wrap: wrap;
 }
 
+/*parte top della sezione con testo e immagine*/
 main .colored-2 .top {
   width: 70%;
-  height: 300px; /*da togliere*/
+  height: 400px; /*da togliere*/
   background-color: orchid;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
+main .colored-2 .testo-top{
+  height: 100px;
+  text-align: center;
+  width: 95%;
+  background-color: blueviolet;
+}
+
+main .colored-2 .immagine-top{
+  background-color: red;
+  width: 95%;
+  height: 300px
+}
+
+/*parte bottom della sezione con testo e pulsante*/
 main .colored-2 .bottom {
   width: 70%;
   height: 100px; /*da togliere*/
@@ -81,6 +133,7 @@ main .colored-2 .bottom {
   justify-content: center;
 }
 
+/*footer*/
 footer{
   height: 400px; /*da togliere*/
   background-color: rosybrown;
@@ -95,6 +148,7 @@ footer .container{
   align-items: center;
 }
 
+/*colonna della lingua*/
 footer .container .lingua{
   background-color: beige;
   height: 250px; /*da togliere*/
@@ -102,6 +156,7 @@ footer .container .lingua{
   margin-right: 20px;
 }
 
+/*colonne dei menu*/
 footer .container .menu{
   background-color: brown;
   height: 250px; /*da togliere*/
@@ -109,6 +164,7 @@ footer .container .menu{
   margin-right: 30px;
 }
 
+/*sezione del footer con logo e pulsante*/
 footer .end{
   width: 70%;
   margin: 0 auto;
