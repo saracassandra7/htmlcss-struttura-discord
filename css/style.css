@@ -21,3 +21,20 @@ header .container span{
   padding: 10px;
   margin: 20px 0;
 }
+
+main .jumbotron {
+  background-color: aqua;
+  height: 350px; /*da togliere*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .jumbotron section{
+  width: 70%;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: cornflowerblue;
+  height: 200px;
+}
+
