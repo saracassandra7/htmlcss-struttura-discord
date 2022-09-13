@@ -1,17 +1,25 @@
+/* generali */
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body{
+  font-family:Arial, Helvetica, sans-serif;
+}
+
 /*header*/
 header{
-  background-color: blue;
-  height: 80px; /*da togliere*/
+  display: flex;
+  align-items: center;
+  background-color: #3061e0;
+  height: 80px; 
 }
 
 header .container{
-  width: 70%;
+  width: 90%;
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -28,14 +36,15 @@ header .container span{
 /*jumbotron*/
 main .jumbotron {
   background-color: aqua;
-  height: 350px; /*da togliere*/
+  height: 550px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 main .jumbotron .intro{
-  width: 50%;
+  max-width: 800px;
+  
   margin: 0 auto;
   padding: 10px;
   background-color: cornflowerblue;
@@ -47,8 +56,8 @@ main .jumbotron .intro{
 
 /*blocchi con immagine e testo*/
 main .info {
-  width: 70%;
-  height: 250px; /*da togliere*/
+  width: 90%;
+  height: 350px; /*da togliere*/
   background-color: greenyellow;
   margin: 0 auto;
   margin-top: 40px;
@@ -59,14 +68,14 @@ main .info {
 
 main .info .immagine{
   width: 52%;
-  height: 200px; /*da togliere*/
+  min-height: 300px; /*da togliere*/
   background-color: gold;
   margin-left: 10px;
 }
 
 main .info .testo{
   width: 42%;
-  height: 200px; /*da togliere*/
+  min-height: 300px; /*da togliere*/
   background-color: lightgoldenrodyellow;
   margin-right: 10px;
 }
@@ -74,7 +83,7 @@ main .info .testo{
 /*blocco con sfondo, testo e immagine*/
 main .colored {
   height: 500px; /*da togliere*/
-  background-color: lightcyan;
+  background-color: #F6F6F6;
   margin-top: 40px;
   display: flex;
   justify-content: center;
@@ -93,7 +102,7 @@ main .colored .testo-reverse{
 
 main .colored-2 {
   height: 500px; /*da togliere*/
-  background-color: palegreen;
+  background-color: #F6F6F6;
   margin-top: 40px;
   display: flex;
   justify-content: center;
@@ -103,12 +112,13 @@ main .colored-2 {
 
 /*parte top della sezione con testo e immagine*/
 main .colored-2 .top {
-  width: 70%;
+  width: 90%;
   height: 400px; /*da togliere*/
   background-color: orchid;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  flex-wrap: wrap;
+  align-items: center;
 }
 
 main .colored-2 .testo-top{
@@ -126,7 +136,7 @@ main .colored-2 .immagine-top{
 
 /*parte bottom della sezione con testo e pulsante*/
 main .colored-2 .bottom {
-  width: 70%;
+  width: 90%;
   height: 100px; /*da togliere*/
   background-color: pink;
   display: flex;
@@ -136,37 +146,36 @@ main .colored-2 .bottom {
 /*footer*/
 footer{
   height: 400px; /*da togliere*/
-  background-color: rosybrown;
+  background-color: #24272A;
 }
 
 footer .container{
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
   padding-top: 20px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
 /*colonna della lingua*/
 footer .container .lingua{
   background-color: beige;
-  height: 250px; /*da togliere*/
-  width: 150px;
-  margin-right: 20px;
+  height: 200px; /*da togliere*/
+  width: calc(100% / 3);
 }
 
 /*colonne dei menu*/
 footer .container .menu{
   background-color: brown;
-  height: 250px; /*da togliere*/
-  width: 100px;
-  margin-right: 30px;
+  height: 200px; /*da togliere*/
+  width: calc(100% / 6);
+  border: 1px solid black;
 }
 
 /*sezione del footer con logo e pulsante*/
 footer .end{
-  width: 70%;
+  width: 90%;
+  min-height: 100px;
   margin: 0 auto;
   padding: 20px 10px;
   display: flex;
